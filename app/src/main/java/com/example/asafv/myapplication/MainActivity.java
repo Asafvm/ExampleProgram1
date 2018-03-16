@@ -18,8 +18,17 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TAG, "v-onCreate");
         Log.w(TAG, "w-onCreate");
 
+        Button btn2 = (Button)findViewById(btn2);
+
+
+
     }
 
+
+    public void btn2Click(){
+        Log.d(TAG, "Clicked!");
+
+    }
     @Override
     protected void onStart() {
         super.onStart();
