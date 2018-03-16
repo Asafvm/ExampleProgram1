@@ -3,6 +3,7 @@ package com.example.asafv.myapplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TAG, "v-onCreate");
         Log.w(TAG, "w-onCreate");
 
-        Button btn2 = (Button)findViewById(btn2);
+        Button btn2 = (Button)findViewById(R.id.btn2);
+        btn2.setOnClickListener();
 
 
 
