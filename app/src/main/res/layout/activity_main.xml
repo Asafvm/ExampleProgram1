@@ -6,29 +6,102 @@
     android:layout_height="match_parent"
     tools:context="com.example.asafv.myapplication.MainActivity">
 
+
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.132" />
 
-    <Button
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="400px"
+        android:layout_height="400px"
         android:text="@string/mainButton1"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn2"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginRight="75px"
+        android:tag="goomba"
+        android:src="@mipmap/ic_goomba"
+        android:onClick="mainFunc"
         />
 
 
-    <Button
+    <ImageButton
         android:id="@+id/btn2"
-        android:onClick="btn2Click"
-        app:layout_constraintHorizontal_weight="2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400px"
+        android:layout_height="400px"
         android:text="@string/mainButton2"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:layout_marginLeft="75px"
+        android:tag="goomba"
+        android:src="@mipmap/ic_goomba"
+        android:onClick="mainFunc"
+        />
+
+    <ImageButton
+        android:id="@+id/btn3"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:text="@string/mainButton1"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn4"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        android:layout_marginRight="75px"
+        android:tag="luigi"
+        android:src="@mipmap/ic_luigi"
+        android:onClick="mainFunc"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btn4"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:text="@string/mainButton2"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn3"
+        app:layout_constraintTop_toBottomOf="@id/btn2"
+        android:layout_marginLeft="75px"
+        android:tag="luigi"
+        android:src="@mipmap/ic_luigi"
+        android:onClick="mainFunc"
+        />
+
+    <ImageButton
+        android:id="@+id/btn5"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:text="@string/mainButton1"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn6"
+        app:layout_constraintTop_toBottomOf="@id/btn3"
+        android:layout_marginRight="75px"
+        android:tag="mario"
+        android:src="@mipmap/ic_mario"
+        android:onClick="mainFunc"
+        />
+
+
+    <ImageButton
+        android:id="@+id/btn6"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:text="@string/mainButton2"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn5"
+        app:layout_constraintTop_toBottomOf="@id/btn4"
+        android:layout_marginLeft="75px"
+        android:tag="mario"
+        android:src="@mipmap/ic_mario"
+        android:onClick="mainFunc"
         />
 </android.support.constraint.ConstraintLayout>
