@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         //insert test for already marked tile
 
         //if()
-        
+
         if (!secondClick) {
             savedTAG = view.findViewById(view.getId()).getTag().toString();
             savedID = view.getId();
